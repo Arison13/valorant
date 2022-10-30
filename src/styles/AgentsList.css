@@ -1,0 +1,12 @@
+.agentsList {
+    background-color: black;
+    color: white;
+    /* display: grid;
+    grid-template-columns:auto auto 4fr; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+

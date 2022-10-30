@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem .4rem;
+}
+
+.navbar-right{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}

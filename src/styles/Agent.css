@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&display=swap');
+
+.agentWrapper{
+   text-decoration: none;
+   /* border: 2px solid white; */
+   /* border-right: 0;
+   border-bottom: 0; */
+   -moz-box-shadow: 5px 6px 5px var(--color-action-shadow);
+   -webkit-box-shadow: 5px 6px 5px var(--color-action-shadow);
+   box-shadow: 5px 6px 5px var(--color-action-shadow);
+   
+   padding: .5rem;
+   border-radius: 8px;
+   height: 40%;
+   width: 25%;
+   margin-bottom: 2rem;
+}
+
+.agent{
+   height: 100%;
+   width: 100%;
+   padding: .5rem;
+   border-radius: 10px;
+   backdrop-filter:blur(10px);
+}
+.agent-top{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 2rem;
+}
+.role {
+   transform: rotate(90deg);
+   transform-origin: left top;
+   top: 6rem;
+   left: calc(100% + 3rem);
+   white-space: nowrap;
+   color: var(--color-action-contrast);
+   font-size: 2.5rem;
+   font-family: var(--font-big);
+   position: absolute;
+   letter-spacing: 1px;
+   background-color: black;
+}
+.agent-name{
+   font-family: var(--font-big);
+   font-weight: 900;
+   font-size: 1.5rem;
+   width: fit-content;
+}
+.agent-picture{
+   height:20rem;
+   width:14rem;
+   object-fit: cover;
+   backdrop-filter: blur(5px);
+}
+
+.agent-picture::before{
+   background-image: linear-gradient(to top right, #1a1a1a, var(--color-action), transparent);
+   content:'';
+   height: 100%;
+   position: absolute;
+   width: 100%;
+   z-index: -1;
+}

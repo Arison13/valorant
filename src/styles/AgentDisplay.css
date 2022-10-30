@@ -1,0 +1,132 @@
+.agentDisplay{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    background-color: var(--color-background);
+}
+
+.display-left{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 1rem;
+    width: 60%;
+}
+
+.agent-portrait{
+    border: 1px solid var(--color-accent);
+    box-shadow: 1px 1px 1px var(--color-action-contrast);
+    height: 50rem;
+    width: 30rem;
+    backdrop-filter: blur(5px);
+    border-radius:var(--border-radius);
+}
+.agent-portrait > img{
+    height: 40rem;
+    width: 25rem;
+    margin-left: 1rem;
+    object-fit: cover;
+}
+
+figcaption{
+    margin: 0;
+	font-weight: bold;
+	font-size: 3em;
+	position: absolute;
+	bottom: 0.7em;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--color-action-contrast);
+	color: var(--color-text-primary);
+}
+
+.agent-portrait::before{
+    background-image: linear-gradient(to top right, #1a1a1a, var(--color-action-bg), transparent);
+    content:'';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.role-info{
+    margin-top: -1.75rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.role-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.agent-role{
+    font-weight: bold;
+	font-size: 2em;
+    margin-right: .5rem;
+    font-family: var(--font);
+}
+
+.role-picture{
+    height: 8rem;
+    width: 5rem;
+    padding-left: 1rem;
+    object-fit: contain;
+}
+.agent-description{
+    margin-top: -1rem;
+}
+
+/* ABILITIES DISPLAY */
+
+.display-right{
+   margin-left: 1rem;
+}
+
+.abilities{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.ability {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-action-contrast);
+    width: 70%; 
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: var(--border-radius);
+    -moz-box-shadow: 3px 3px 4px var(--color-action-bg);
+    -webkit-box-shadow: 3px 3px 4px var(--color-action-bg);
+    box-shadow: 3px 3px 4px var(--color-action-bg);
+}
+
+.ability-image{
+  margin-right: 1rem;  
+}
+
+.ability-image > img{
+    height: 10rem;
+    width: 6rem;
+    padding-left: 1rem;
+    object-fit: contain;
+}
+.ability-description{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.ability-description > h2 {
+    width: fit-content;
+    /* border-bottom: 1px solid var(--color-action); */
+
+}
+.ability-description > p {
+    margin-top: 1rem;
+}

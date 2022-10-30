@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Anton&family=Lato&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--font);
+}
+:root{
+  --color-action:#FF4655;
+  --color-action-shadow:#FF4655;
+  --color-action-bg:#5589bdff;
+  --color-accent: #BFBDB6;
+  --color-action-contrast: #efefef;
+  --color-background: #0F141A;
+  --color-background-lighter: #0F1923;
+  --color-background-opacity-50: rgba(15, 20, 26, 0.5);
+  --color-surface: #1b2733;
+  --color-text-primary: #efefef;
+  --color-text-secondary: #99ABBF;
+  --color-text-dim: rgba(239, 239, 239, 0.75);
+  --border-radius: .5rem;
+  --font: 'Roboto', sans-serif;
+  --font-lato: 'Lato', sans-serif;
+  --font-big: 'Anton', sans-serif;
+}
+.App {
+  background-color: var(--color-background-lighter);
+  color: white,
+
+}
+
+
