@@ -1,11 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios';
+import Map from './Map';
+import '../../styles/MapsStyles/MapsList.css';
 
 function MapsList() {
+  const [maps, setMaps] = useState([])
+  const [loading, setLoading] = useState(true);
 
-console.log('inside maps')
-  return (
-    <div>MapsList</div>
-  )
-}
+  useEffect(() => {
+    axios.get("https://valorant-api.com/v1/maps")
+    .then(res => {
+      setMaps(res.data.data)
+      setLoading(false);
+    }) 
+    .catch(err => {
+      console.log(err)
+    })
+  }, [])
+
+
+  console.log('inside maps')
+    return (
+      <div className='mapsList'>
+        {
+          maps.map((map, idx) => {
+            return (<Map map={map} key={idx} />)
+          })
+        
+        }
+      </div>
+    )
+  }
 
 export default MapsList
