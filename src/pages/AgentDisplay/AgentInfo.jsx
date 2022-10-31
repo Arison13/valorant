@@ -15,7 +15,6 @@ function AgentInfo() {
             setLoading(false)
             setAgent(res.data.data)
             setAgentAbilities(res.data.data.abilities)
-            console.log(res.data.data);
          }) 
          .catch(err => {
            console.log(err)

@@ -19,7 +19,6 @@ function MapsList() {
   }, [])
 
 
-  console.log('inside maps')
     return (
       <div className='mapsList'>
         {
