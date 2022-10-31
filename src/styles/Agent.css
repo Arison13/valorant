@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&display=swap');
 
 .agentWrapper{
    text-decoration: none;
@@ -19,9 +18,8 @@
    padding: .5rem;
    border-radius: 10px;
    backdrop-filter:blur(10px);
-   /* background-color: black; */
-   /* could try to make each agent bg-color different than the page's bg just to make it pop more */
 }
+
 .agent-top{
    display: flex;
    align-items: center;

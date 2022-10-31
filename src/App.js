@@ -1,13 +1,14 @@
 import './App.css';
 import { useState, useEffect} from 'react';
 import axios from 'axios';
-import AgentList from './pages/AgentList';
+import AgentList from './pages/AgentDisplay/AgentList';
 import Header from './components/Header';
 import LoadingScreen from './components/LoadingScreen';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';import MapsList from './pages/MapsList';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';import MapsList from './pages/MapsDisplay/MapsList';
 import WeaponsList from './pages/WeaponsList';
 import Agent from './components/Agent';
-import AgentInfo from './pages/AgentInfo';
+import AgentInfo from './pages/AgentDisplay/AgentInfo';
+import MatchDisplay from './pages/MatchDisplay';
 
 function App() {
   const [agentData, setAgentData] = useState([])
@@ -38,6 +39,7 @@ function App() {
         <Route path='/weapons' element={<WeaponsList />}/>
         <Route path='/maps' element={<MapsList/>} />
         <Route path='/agents/:agentID' element={<AgentInfo />} />
+        <Route path='/:match' element={<MatchDisplay/>} />
       </Routes>
      
       { loading && <LoadingScreen/> }

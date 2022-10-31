@@ -12,7 +12,7 @@ export default function Header() {
             <li> <Link to='/agents'>Agents</Link> </li>
             <li> <Link to='/weapons'>Weapons</Link> </li>
             <li> <Link to='/maps'>Maps</Link> </li>
-            <li> <Link to='/:matchID'>Look Up Match</Link> </li> 
+            <li> <Link to='/1'>Look Up Match</Link> </li> 
             {/* need to use other server to get match info based on ID */}
         </ul>
     </header>

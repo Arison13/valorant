@@ -1,6 +1,6 @@
 import React from 'react'
-import '../styles/AgentsList.css'
-import Agent from '../components/Agent'
+import '../../styles/AgentsList.css';
+import Agent from '../../components/Agent';
 
 export default function AgentList({agentData}) {
     
