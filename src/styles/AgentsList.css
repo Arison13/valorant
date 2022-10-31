@@ -1,12 +1,11 @@
 .agentsList {
-    background-color: black;
+    background-color: var(--color-background);
     color: white;
-    /* display: grid;
-    grid-template-columns:auto auto 4fr; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
+    margin-top: 1rem;
 }
 

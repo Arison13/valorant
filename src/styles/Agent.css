@@ -2,18 +2,15 @@
 
 .agentWrapper{
    text-decoration: none;
-   /* border: 2px solid white; */
-   /* border-right: 0;
-   border-bottom: 0; */
    -moz-box-shadow: 5px 6px 5px var(--color-action-shadow);
    -webkit-box-shadow: 5px 6px 5px var(--color-action-shadow);
    box-shadow: 5px 6px 5px var(--color-action-shadow);
-   
    padding: .5rem;
    border-radius: 8px;
    height: 40%;
    width: 25%;
    margin-bottom: 2rem;
+   transition: all 200ms ease-out;
 }
 
 .agent{
@@ -22,6 +19,8 @@
    padding: .5rem;
    border-radius: 10px;
    backdrop-filter:blur(10px);
+   /* background-color: black; */
+   /* could try to make each agent bg-color different than the page's bg just to make it pop more */
 }
 .agent-top{
    display: flex;
@@ -40,7 +39,7 @@
    font-family: var(--font-big);
    position: absolute;
    letter-spacing: 1px;
-   background-color: black;
+   background-color: var(--color-background);
 }
 .agent-name{
    font-family: var(--font-big);
@@ -62,4 +61,13 @@
    position: absolute;
    width: 100%;
    z-index: -1;
+}
+
+.agentWrapper:hover{
+   transform: scale(1.15);   
+   background-color: black;
+   -moz-box-shadow: 5px 6px 5px var(--color-action-shadow);
+   -webkit-box-shadow: 5px 6px 5px var(--color-action-shadow);
+   box-shadow: 4px 4px 5px 4px var(--color-action-shadow);
+
 }

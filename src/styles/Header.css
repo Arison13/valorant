@@ -1,7 +1,14 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem .4rem;
+    /* border: 1px solid red; */
+    background-color: var(--color-background-lighter);
+    /* padding-bottom: ; */
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .navbar-right{
@@ -9,4 +16,20 @@
     display: flex;
     justify-content: space-around;
     width: 40%;
+}
+
+li > a {
+    border-radius: var(--border-radius);
+    padding: .75rem 1rem;
+    background-color: var(--color-action-dim);
+    color: var(--color-text-dim);
+    text-decoration: none;
+    box-shadow: -2px 2px 0px 0px white;
+    transition: all ease-in 300ms;
+}
+
+li > a:hover {
+    box-shadow: 2px -2px 1px 0px var(--color-action);
+    color:black;
+    background-color: var(--color-action-contrast);
 }

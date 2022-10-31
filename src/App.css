@@ -10,6 +10,7 @@ body{
 }
 :root{
   --color-action:#FF4655;
+  --color-action-dim:#ff4656b8;
   --color-action-shadow:#FF4655;
   --color-action-bg:#5589bdff;
   --color-accent: #BFBDB6;
@@ -27,7 +28,7 @@ body{
   --font-big: 'Anton', sans-serif;
 }
 .App {
-  background-color: var(--color-background-lighter);
+  background-color: var(--color-background);
   color: white,
 
 }
