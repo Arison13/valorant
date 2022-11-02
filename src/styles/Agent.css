@@ -30,7 +30,7 @@
    transform: rotate(90deg);
    transform-origin: left top;
    top: 6rem;
-   left: calc(100% + 3rem);
+   left: calc(100% + 2.6rem);
    white-space: nowrap;
    color: var(--color-action-contrast);
    font-size: 2.5rem;
@@ -38,12 +38,14 @@
    position: absolute;
    letter-spacing: 1px;
    background-color: var(--color-background);
+   text-shadow: 4px 4px 3px black, 4px 5px 6px var(--color-action-shadow);
 }
 .agent-name{
    font-family: var(--font-big);
    font-weight: 900;
    font-size: 1.5rem;
    width: fit-content;
+   text-shadow: 4px 4px 3px black, 4px 5px 6px var(--color-action-shadow);
 }
 .agent-picture{
    height:20rem;
@@ -62,7 +64,7 @@
 }
 
 .agentWrapper:hover{
-   transform: scale(1.15);   
+   transform: scale(1.10);   
    background-color: black;
    -moz-box-shadow: 5px 6px 5px var(--color-action-shadow);
    -webkit-box-shadow: 5px 6px 5px var(--color-action-shadow);
@@ -73,9 +75,20 @@
 @media only screen and (max-width: 450px){
    .agentWrapper {
       width: 80%;
+      -moz-box-shadow: 5px 6px 5px var(--color-action-shadow);
+      -webkit-box-shadow: 5px 6px 5px var(--color-action-shadow);
+      box-shadow: 4px 4px 5px 4px var(--color-action-shadow);
    }
 
    .agentWrapper:hover{ 
-      transform: scale(1.05);
+      transform: scale(1.02);
+      background-color: var(--color-background);
+      -moz-box-shadow: 5px 6px 8px var(--color-action-shadow);
+      -webkit-box-shadow: 5px 8px 6px var(--color-action-shadow);
+      box-shadow: 4px 4px 8px 6px var(--color-action-shadow);
+   }
+
+   .role {
+      left: calc(100% + 2.5rem);
    }
 }
