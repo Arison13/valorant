@@ -9,6 +9,7 @@
     font-family: var(--font-lato);
     font-size: 1rem;
     font-weight: 600;
+    overflow: hidden;
 }
 
 .navbar-right{
