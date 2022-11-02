@@ -8,7 +8,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';import MapsList 
 import WeaponsList from './pages/WeaponsList';
 import AgentInfo from './pages/AgentDisplay/AgentInfo';
 import MatchDisplay from './pages/MatchDisplay';
-import MapInfo from './pages/MapsDisplay/MapInfo';
 
 function App() {
   const [agentData, setAgentData] = useState([])
@@ -45,7 +44,6 @@ function App() {
       
        {/* Maps Routes */}
         <Route path='/maps' element={<MapsList/>} />
-        <Route path='/maps/:map' element={MapInfo} />
 
         {/* Match Routes */}
         <Route path='/:match' element={<MatchDisplay/>} />
