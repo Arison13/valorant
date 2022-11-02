@@ -69,3 +69,13 @@
    box-shadow: 4px 4px 5px 4px var(--color-action-shadow);
 
 }
+
+@media only screen and (max-width: 450px){
+   .agentWrapper {
+      width: 80%;
+   }
+
+   .agentWrapper:hover{ 
+      transform: scale(1.05);
+   }
+}
