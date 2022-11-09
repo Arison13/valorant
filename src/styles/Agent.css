@@ -25,6 +25,7 @@
    align-items: center;
    justify-content: space-between;
    margin-left: 2rem;
+   position:relative;
 }
 .role {
    transform: rotate(90deg);
@@ -38,14 +39,15 @@
    position: absolute;
    letter-spacing: 1px;
    background-color: var(--color-background);
-   text-shadow: 4px 4px 3px black, 4px 5px 6px var(--color-action-shadow);
+   text-shadow: 3px 3px 3px black, 4px 3px 2px var(--color-action-shadow);
 }
 .agent-name{
    font-family: var(--font-big);
    font-weight: 900;
-   font-size: 1.5rem;
+   font-size: 1.8rem;
    width: fit-content;
-   text-shadow: 4px 4px 3px black, 4px 5px 6px var(--color-action-shadow);
+   letter-spacing: 3px;
+   text-shadow: 3px 3px 3px black, 4px 3px 2px var(--color-action-shadow);
 }
 .agent-picture{
    height:20rem;
@@ -89,6 +91,9 @@
    }
 
    .role {
-      left: calc(100% + 2.5rem);
+      left: calc(100% + 3rem);
+   }
+   .agent-name{
+      letter-spacing: 4px;
    }
 }
