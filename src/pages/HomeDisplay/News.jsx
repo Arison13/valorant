@@ -1,20 +1,16 @@
 import React from 'react'
-
+import Article from './Article'
+import '../../styles/HomeStyles/News.css'
 function News({news}) {
-  return (<div>
+  return (
+  <div className='articles-section'>
     {   
-        news.map((n, idx) => {
-            return (
-            <div className='news-section' key={idx}>
-                <img src={n.banner_url} alt={n.title}/>
-                <h4> {n.title} </h4>
-                <p>Category {n.category}</p>
-                <a href={n.url}> See More</a>
-            </div>
-                )
+        news.map((article, idx) => {
+            return ( <Article key={idx} article={article} />)
         })
     }
-   </div>)
+   </div>
+   )
 }
 
 export default News
