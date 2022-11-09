@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Map from './Map';
 import '../../styles/MapsStyles/MapsList.css';
+import LoadingScreen from '../../components/LoadingScreen';
 
 function MapsList() {
   const [maps, setMaps] = useState([])
@@ -21,6 +22,8 @@ function MapsList() {
 
     return (
       <div className='mapsList'>
+        { loading && <LoadingScreen/> }
+        
         {
           maps.map((map, idx) => {
             return (<Map map={map} key={idx} />)

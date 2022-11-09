@@ -9,8 +9,8 @@ export default function Header() {
         <h4 className='nav-title'>Valorant For Noobs</h4>
     </div>
         <ul className='navbar-right'> 
+            <li> <Link to='/'>Home</Link> </li>
             <li> <Link to='/agents'>Agents</Link> </li>
-            <li> <Link to='/weapons'>Weapons</Link> </li>
             <li> <Link to='/maps'>Maps</Link> </li>
             <li> <Link to='/1'>Look Up Match</Link> </li> 
             {/* need to use other server to get match info based on ID */}
