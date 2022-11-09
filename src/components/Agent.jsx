@@ -12,7 +12,6 @@ export default function Agent({agent}) {
       to={`/agents/${agent.uuid}`}
     > 
     
-    {/* Sets the background pic */}
       <div className='agent' >
         <div className='agent-top'>
           <img alt={agent.displayName} className="agent-picture" src={agent.bustPortrait}/>
