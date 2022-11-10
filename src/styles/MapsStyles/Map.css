@@ -34,12 +34,12 @@
     object-fit: cover;
     position: relative;
     /* border: 1px solid white; */
+    transition:300ms ease-in;
 }
 
 .map-image:hover{
     backdrop-filter: blur(5px);
     filter: blur(1px);
-    transition:300ms ease-in;
 }
 .map-coordinates{
     transform: rotate(90deg) translateX(-50%);
@@ -61,4 +61,25 @@
     transform:  translateX(-30%) translateY(-80%);
     width: fit-content;
     text-shadow: 4px 6px 5px black;
+}
+
+@media only screen and (max-width: 450px) { 
+    .map-wrapper{
+        width: 100%;
+        padding: .5rem .75rem;
+    }
+
+    .map-wrapper:hover {
+        transform: scale(1);
+    }
+
+    .map{
+        padding: 0;
+    }
+
+    .map-image {
+        height: 50vh;
+        width: 100%;
+        filter: blur(1px);
+    }
 }
