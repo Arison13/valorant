@@ -11,7 +11,9 @@ function App() {
   return (
    <BrowserRouter> 
     <div className="App">
+      <div className='header'> 
        <Header/>
+       </div>
       <Routes> 
         <Route path='/' element={<Home/>} />
         <Route path='/agents' element={<AgentList/>} />
