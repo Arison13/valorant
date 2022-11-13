@@ -6,7 +6,6 @@ import {MdOutlineClose} from "react-icons/md"
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
-  console.log(isMobile)
   return (
     <header className='navbar'> 
       {isMobile ? <MdOutlineClose onClick={()=>{setIsMobile(false)}} className='mobile-menu-btn' /> :
