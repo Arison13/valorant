@@ -16,6 +16,9 @@
 
 .nav-title{
     font-family: var(--font-big);
+    color: var(--color-action);
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
 }
 .mobile-navbar{
     display: none;
