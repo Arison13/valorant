@@ -21,7 +21,7 @@ function AgentInfo() {
            setLoading(false);
          })
       
-        }, [])
+        }, [agentID])
 
   return (
     <div>

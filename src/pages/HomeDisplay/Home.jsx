@@ -29,14 +29,16 @@ function Home() {
         </div>
 
         <div className='news-section'> 
-            <h3>News Section</h3>
-            <form> 
-                <select value={currentSelection} onChange={(ev)=> handleSelection(ev) }> 
-                    <option value='announcements'> Announcements</option>
-                    <option value='esports'> Esports</option>
-                    <option value='game_updates'> Game Updates </option>
-                </select>
-            </form>
+        <div className='form-select'>
+                <h3>News Section</h3>
+                <form> 
+                    <select value={currentSelection} onChange={(ev)=> handleSelection(ev) }> 
+                        <option value='announcements'> Announcements</option>
+                        <option value='esports'> Esports</option>
+                        <option value='game_updates'> Game Updates </option>
+                    </select>
+                </form>
+            </div>
             <News news={esports}/>
         </div>
     </div>
@@ -44,3 +46,4 @@ function Home() {
 }
 
 export default Home
+
