@@ -3,15 +3,32 @@ import React, { useState } from "react";
 // https://docs.henrikdev.xyz/valorant.html
 //docs for API thats gonna be use to power this page
 export const SearchPage = () => {
-  const SearchOptionsContainer = () => {
+  const ButtonOption = ({ text }) => {
     const [showDropDown, setShowDropDown] = useState(false);
     const buttonStyles =
       "py-2 px-4 lg:w-auto w-4/6 shadow-lg shadow-[#5589bdff] font-semibold font-mono rounded-md bg-slate-100 text-[#FF4655]";
     return (
+      <div id="button-container" className="relative">
+        <button
+          className={buttonStyles}
+          onClick={() => setShowDropDown(!showDropDown)}>
+          {text}
+        </button>
+        <div
+          className={`${
+            showDropDown ? "relative visible" : "absolute invisible"
+          } transition duration-300`}>
+          DropDown
+        </div>
+      </div>
+    );
+  };
+  const SearchOptionsContainer = () => {
+    return (
       <div className="flex lg:flex-row flex-col w-full justify-center items-center gap-6 p-4">
-        <button className={buttonStyles}>Search Latest Matches</button>
-        <button className={buttonStyles}>Search MMR History</button>
-        <button className={buttonStyles}>Search Player Profile</button>
+        <ButtonOption text={"Search Latest Matches"} />
+        <ButtonOption text={"Search MMR History"} />
+        <ButtonOption text={"Search Player Profile"} />
       </div>
     );
   };
