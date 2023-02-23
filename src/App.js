@@ -20,7 +20,7 @@ function App() {
         <Route path='/agents/:agentID' element={<AgentInfo />} />
         <Route path='/maps' element={<MapsList/>} />
         {/* Still needs to be developed */}
-        <Route path='/:match' element={<MatchDisplay/>} />
+        <Route path='/match' element={<MatchDisplay/>} />
       </Routes>
     </div>
     </BrowserRouter>
