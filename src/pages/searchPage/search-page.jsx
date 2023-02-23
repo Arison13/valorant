@@ -8,16 +8,12 @@ export const SearchPage = () => {
     const buttonStyles =
       "py-2 px-4 lg:w-auto w-4/6 shadow-lg shadow-[#5589bdff] font-semibold font-mono rounded-md bg-slate-100 text-[#FF4655]";
     return (
-      <div id="button-container" className="relative">
-        <button
-          className={buttonStyles}
-          onClick={() => setShowDropDown(!showDropDown)}>
-          {text}
-        </button>
+      <div id="button-container" className={`relative ${buttonStyles}`}>
+        <button onClick={() => setShowDropDown(!showDropDown)}>{text}</button>
         <div
           className={`${
             showDropDown ? "relative visible" : "absolute invisible"
-          } transition duration-300`}>
+          } transition-all duration-300 ease-in`}>
           DropDown
         </div>
       </div>
