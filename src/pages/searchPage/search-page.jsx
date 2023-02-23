@@ -16,9 +16,9 @@ export const SearchPage = () => {
               ? "opacity-100 visible translate-x-0 relative"
               : "opacity-0 invisible pointer-events-none translate-x-24 absolute"
           } transition-all ease-in bg-black rounded-sm flex flex-col`}>
-          <p> Dropdown 1 </p>
-          <p> Dropdown 2</p>
-          <p> Dropdown 3</p>
+          <p className="p-2"> Dropdown 1 </p>
+          <p className="p-2"> Dropdown 2</p>
+          <p className="p-2"> Dropdown 3</p>
         </div>
       </div>
     );
