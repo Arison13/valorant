@@ -39,7 +39,7 @@ export default function Header() {
           <Link to="/maps">Maps</Link>
         </li>
         <li>
-          <Link to="/search">Look Up Match</Link>
+          <Link to="/search">Search</Link>
         </li>
       </ul>
 
@@ -66,7 +66,7 @@ export default function Header() {
           onClick={() => {
             setIsMobile(false);
           }}>
-          <Link to="/search">Look Up Match</Link>
+          <Link to="/search">Search</Link>
         </li>
       </ul>
     </header>
