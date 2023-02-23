@@ -33,6 +33,5 @@ body{
 }
 .App {
   background-color: var(--color-background);
-  color: white,
-
+  color: white;
 }
